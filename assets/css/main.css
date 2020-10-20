@@ -3500,6 +3500,9 @@ ul.contact-info2 i.fa {
     width:auto !important;
     max-width: fit-content !important;
   }
+  .carousel-title {
+    font-size: 1.50rem !important;
+  }
 }
 
 /* Personalized Items */ 
@@ -3596,6 +3599,11 @@ ul.contact-info2 i.fa {
 .text-centered-white {
   text-align: center; 
   color: white;
+}
+
+
+.text-centered {
+  text-align: center; 
 }
 
 .center {
