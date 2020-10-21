@@ -3633,7 +3633,6 @@ ul.contact-info2 i.fa {
 
 .glow:hover {
   font-weight: bold;
-  /*color: white;*/
   color: #FF5000;
 }
 
@@ -3645,6 +3644,33 @@ ul.contact-info2 i.fa {
 .img-carousel {
   width:100%;
 }
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 70px;
+  background-color: white;
+  z-index: 900;
+  /* padding: 50px; */
+  /* font-size: 20px; */
+}
+
+.breadcumb-content {
+background-color: white;  
+border-radius: 0px; 
+padding-top: 0px;
+}
+
+#navScrollspy a {
+color: #666;
+}
+
+#navScrollspy .active {
+font-weight: bold;
+color: #FF5000;
+}
+
+
 
 
 /* Bootstrap 4.5 dropleft Class */
