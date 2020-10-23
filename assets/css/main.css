@@ -3651,8 +3651,6 @@ div.sticky {
   top: 70px;
   background-color: white;
   z-index: 900;
-  /* padding: 50px; */
-  /* font-size: 20px; */
 }
 
 .breadcumb-content {
@@ -3670,8 +3668,18 @@ font-weight: bold;
 color: #FF5000;
 }
 
+.blank::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -140px; 
+  height: 140px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
 
-
+.product-section {
+  padding: 0 0;
+}
 
 /* Bootstrap 4.5 dropleft Class */
 .dropleft,.dropright,.dropup{position:relative}
