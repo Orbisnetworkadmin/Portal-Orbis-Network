@@ -27,6 +27,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/extras/animate.css">
     <link rel="stylesheet" type="text/css" href="./assets/extras/normalize.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/action-button.css">
+
     <!-- Color CSS Styles  -->
     <link rel="stylesheet" type="text/css" href="./assets/css/colors/orange.css" media="screen" />       
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -37,7 +38,7 @@
     </script>
     <![endif]-->
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navScrollspy" style="position: relative;">
 
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
@@ -80,7 +81,7 @@
                   <a class="nav-link" href="./index.html" role="button" aria-haspopup="true" aria-expanded="false">Home</a>                  
                 </li>                                     
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     Productos
                   </a>
                   <div class="dropdown-menu" style="width: 800px;">
@@ -90,10 +91,10 @@
                           <h5 class="sub-menu-col-title">
                             Productos </h5>
                           <a class="dropdown-item" href="./enterprise-architecture.html">Arquitectura Empresarial</a>
-                          <a class="dropdown-item" href="./risk-management.html">Gestión de Riesgos</a>
+                          <a class="dropdown-item active" href="./risk-management.html">Gestión de Riesgos</a>
                           <a class="dropdown-item" href="./cyber-security.html">Cyber-Seguridad</a>
                           <a class="dropdown-item" href="./business-continuity.html">Continuidad del Negocio</a>
-                          <a class="dropdown-item" href="./it-management.html">Gobienro y Gestión de TI</a>
+                          <a class="dropdown-item" href="./it-management.html">Gobierno y Gestión de TI</a>
                           <a class="dropdown-item" href="./audit-compliance.html">Auditoría y Cumplimiento</a>
                           <a class="dropdown-item" href="./corporate-governance.html">Gestión Estratégica</a>
                           <a class="dropdown-item" href="./learning.html">Capacitación y Desarrollo</a>
@@ -197,7 +198,7 @@
                   </a>
                   <div class="dropdown-menu">                      
                     <a class="dropdown-item" href="./about-us.html">Nuestra Empresa</a>
-                    <a class="dropdown-item active" href="#">Contáctenos</a>
+                    <a class="dropdown-item" href="./contact.html">Contáctenos</a>
                     <a class="dropdown-item" href="./events.html">Eventos y Webinars</a>
                     <a class="dropdown-item" href="./partners.html">Asociaciones</a>
                     <a class="dropdown-item" href="./jobs.html">Postulaciones</a>
@@ -301,121 +302,452 @@
     <!-- Header-wrap Section End -->
 
 
-    <!-- Main Content -->
+    <section id="section-showcase" style="margin-top: 70px;">
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+          <li data-target="#carousel" data-slide-to="3"></li>
+          <li data-target="#carousel" data-slide-to="4"></li>
+
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img src="./assets/img/banner/bn21a.jpg" alt="Gestión de Riesgos de Liquidez"
+              class="img-carousel d-block img-fluid">
+            <div class="carousel-caption" style="text-align: right;">
+              <h2 class="carousel-title wow fadeInUpQuick animated" data-wow-delay=".5s">Gestión de Riesgos de Liquidez
+              </h2>
+              <p class="lead wow fadeInUpQuick animated" data-wow-delay=".7s">Implemente los mecanismos eficientes que permitirán 
+              a su organización tener un flujo de efectivo oportuno así como; la capacidad necesaria y adecuada para afrontar compromisos/pagos
+              previamente acordados, sin incumplir e incurrir en incumplimientos frente a terceros.</p>
+              <a href="#section-0" class="btn btn-lg btn-dark-bg wow fadeInUpQuick animated" data-wow-delay=".9s">Leer más...</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="./assets/img/banner/bn17.jpg"
+              alt="Valoración de Activos Financieros"
+              class="img-carousel d-block img-fluid">
+            <div class="carousel-caption" style="text-align: left;">
+              <h2 class="carousel-title wow fadeInUpQuick animated" data-wow-delay=".5s">Valoración de Activos Financieros.</h2>
+              <p class="lead wow fadeInUpQuick animated" data-wow-delay=".7s">Las deficiencias demostradas por exceso de confianza en la medición VaR 
+              como la principal herramienta cuantitativa validada por la SEC y BASILEA durante los noventa y sus efectos devastadores en las crisis 
+              bancarias, evidencian la necesidad de mantener revisiones y diagnósticos proactivos acerca de los principales activos de un Banco.
+              <br><br>
+              La simple determinación de la máxima pérdida esperada de un portafolio de activos y la toma de decisiones basadas en este
+              elemento, demostró ser eficaz para ocultar y acumular fuerzas que terminaron por destruir buena parte del sistema financiero
+              mundial.
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="./assets/img/banner/bn24.jpg" alt="CAMELS"
+              class="img-carousel d-block img-fluid">
+            <div class="carousel-caption" style="text-align: left;">
+              <h2 class="carousel-title wow fadeInUpQuick animated" data-wow-delay=".5s">CAMELS</h2>
+              <p class="lead wow fadeInUpQuick animated" data-wow-delay=".7s">
+              Los Bancos están categorizados por estratos y el análisis de<br> su estructura permite profundizar en los principales indicadores 
+              financieros;<br> así como, determinar su perfil de riesgo y los puntos a mejorar para ascender<br> dentro de los niveles determinados, con un 
+              uso menor de recursos y maximizando<br> sus ingresos.
+              <br><br>
+              Las calificaciones individuales de los seis (6) componentes del CAMELS<br> se resumen en una clasificación compuesta de la
+              Institución analizada.<br> Dicha calificación refleja el juicio de cada componente y su efecto sobre los demás.</p>
+            </div>
+          </div>
+          
+        
 
 
-    <section id="section-jumbotron"
-      class="jumbotron jumbotron-fluid d-flex justify-content-left align-items-left" style="margin: 0px; background-image: url('./assets/img/banner/strd1.jpg');">
-      <div class="container text-left">
-        <h1 class="display-4 text-secundary" style="color: white; margin-top: 60px;">Contacto</h1>
+
+
+        </div>
+        <a href="#carousel" class="carousel-control-prev" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a href="#carousel" class="carousel-control-next" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </section>
 
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb" style="background-color: white;  border-radius: 0px;">
-        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-        <li class="breadcrumb-item"><a href="#">Orbis</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Contáctenos</li>
-      </ol>
-    </nav>
 
-    <section class="contact2-section section" style="padding-top: 0px;">
+    <div class="sticky" >
+      <nav id="sub-nav" class="container hide-on-small-devices">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-lg-12 ">
+            <ul id="navScrollspy" class="nav nav-inline center" style="padding: .75rem 1rem 0rem 1rem;">
+              <li class="nav-item">
+                <a class="nav-link" href="#section-0" style="padding: 0rem .5rem 0rem .5rem;">Resumen</a>|
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-0a" style="padding: 0rem .5rem 0rem .5rem;">Riesgo de Liquidez</a>|
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-2" style="padding: 0rem .5rem 0rem .5rem;">Beneficios</a>|
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-3" style="padding: 0rem .5rem 0rem .5rem;">Contacto</a>|
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-4" style="padding: 0rem .5rem 0rem .5rem;">Recursos</a>
+              </li>
+            </ul>
+          </div> 
+        </div>
+      </nav>
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcumb-content">
+          <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Productos</a></li>
+          <li class="breadcrumb-item"><a href="./risk-management.html">Gestión de Riesgos</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Gestión de Riesgos de Liquidez</li>
+        </ol>
+      </nav>
+    </div>
+
+  <div id="section-0" class="blank"></div>
+
+    <!-- Service Block-1 Section -->
+    <section id="overview" class="section">
+      <!-- Container Starts -->
+      <div class="container">
+        <div class="row">        
+          <h1 class="section-title wow fadeIn animated" data-wow-delay=".2s">
+            RESUMEN GENERAL
+          </h1>
+          <br>
+          <p class="section-subcontent" style="text-align: justify">La atención hacia el riesgo financiero se ha incrementado a lo largo del tiempo, 
+          lo que ha abierto la necesidad a empresas de todo tipo y tamaño de nuevos marcos de gestión de riesgos financieros sólidos que satisfagan 
+          las demandas de cumplimiento, contribuyan a una mejor toma de decisiones y mejoren el desempeño.
+          <br><br>
+          Ofrecemos un amplio servicio de gestión de riesgos financieros que apoyan a instituciones financieras públicas y
+          privadas a identificar, evaluar, administrar, informar y limitar los riesgos que estas enfrentan.
+          <br><br id="section-0a">
+          Nuestros expertos en gestión de riesgos financieros trabajan con las instituciones financieras y otros clientes
+          corporativos para resaltar los puntos de interés y ayudarlos a mejorar los procesos, la gobernanza y la estrategia
+          relacionadas a la medición y gestión del riesgo, el cumplimiento normativo; y los aspectos relacionados a la
+          valoración de activos, CAMELS, RAROC y de la transformación a Basilea II y Solvencias II.
+
+          </p>
+          <h1 class="section-title wow fadeIn animated" data-wow-delay=".2s">
+            GESTIÓN DEL RIESGO DE LIQUIDEZ
+          </h1>
+          <br>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 com-md-6">
+                <P style="text-align: justify">El riesgo de Liquidez es la incapacidad de disponer de los fondos necesarios
+                para hacer frente a sus obligaciones en un momento determinado. En Orbis, creamos de manera conjunta con el cliente, los
+                mecanismos que permitirán a las organizaciones tener un flujo de efectivo oportuno, como también la capacidad necesaria y adecuada para
+                afrontar compromisos/pagos previamente acordados, sin incumplir e incurrir en incumplimientos frente a terceros.<br><br>
+                Arme equipo con nuestro grupo de expertos y realice las evaluaciones pertinentes a los procesos inherentes al Riesgo de
+                Liquidez de su organización, a fin de realizar un diagnóstico del área y poder establecer los mecanismos que se adecuen a sus
+                necesidades, bajo una perspectiva de GRC.
+                </P>
+              </div>
+              <div class="col-sm-6 com-md-6">
+                <img src="./assets/img/industries/ind4.jpg" class="hide-on-small-devices d-block img-fluid" style="display: block; margin-left: auto; margin-right: auto;
+                          width: 380px;" alt="Risk Matrix">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- Container Ends -->
+    </section><!-- Service Main Section Ends -->
+
+
+
+  <div id="section-2" class="blank"></div>
+
+  <!-- Service Block-1 Section -->
+  <section id="benefits" class="section">
+    <!-- Container Starts -->
+    <div class="container">
+      <div class="row">
+        <h1 class="section-title wow fadeIn animated" data-wow-delay=".2s">
+          BENEFICIOS
+        </h1>
+        <br>
+        <p style="text-align: justify">Las organizaciones deben contar con la capacidad de identificar los desafíos que se avecinan y adaptarse a estos con la finalidad de hacerles 
+        frente.
+        La toma de decisiones debe hacerse con la conciencia tanto de las oportunidades para crear valor; como de los riesgos que
+        desafían el logro del valor, esto se logra mediante la integración de las buenas prácticas de gestión del riesgo empresarial con el
+        establecimiento de estrategias y la gestión del desempeño, de tal manera que, se incrementen más los beneficios relacionados con la
+        obtención del valor.
+        </p>
+        <p  style="text-align: justify">
+          <i class="fa fa-arrow-circle-o-right" style="color:#FF5000; padding-left: 40px; padding-right: 15px;"></i>Mejorar la calidad y la efectividad del proceso de Administración del Riesgo de Liquidez.<br>
+          <i class="fa fa-arrow-circle-o-right" style="color:#FF5000; padding-left: 40px; padding-right: 15px;"></i>Ofrecer información oportuna y comprensible a áreas relacionadas.<br>
+          <i class="fa fa-arrow-circle-o-right" style="color:#FF5000; padding-left: 40px; padding-right: 15px;"></i>Brindar apoyo a las políticas de gobierno y administración de riesgos de su organización.<br>
+          <i class="fa fa-arrow-circle-o-right" style="color:#FF5000; padding-left: 40px; padding-right: 15px;"></i>Adecuación a la normativa vigente que le garantiza minimizar los riesgos de sanciones por incumplimiento.<br>
+          <i class="fa fa-arrow-circle-o-right" style="color:#FF5000; padding-left: 40px; padding-right: 15px;"></i>La medición del Riesgo de Liquidez se realiza de manera que agregue valor a la organización.<br>
+          <i class="fa fa-arrow-circle-o-right" style="color:#FF5000; padding-left: 40px; padding-right: 15px;"></i>Acompañamiento de personal con amplios conocimientos en la administración de los Riesgos Financieros.<br>
+          <i class="fa fa-arrow-circle-o-right" style="color:#FF5000; padding-left: 40px; padding-right: 15px;"></i>Mejore la cultura y cree una consciencia al riesgo homogénea, en todos los niveles de la organización.<br>
+          <i class="fa fa-arrow-circle-o-right" style="color:#FF5000; padding-left: 40px; padding-right: 15px;"></i>Mejore los procesos y las metodologías de estimación de riesgo de liquidez, a fin de disminuir las probabilidades de impago por parte de los clientes.<br>
+        </p>
+      </div>
+    </div><!-- Container Ends -->
+  </section><!-- Benefits Section Ends -->
+  
+    <div id="section-1" class="blank"></div>
+    
+    <!-- Banking and Finance Services Section Start -->
+    <section class="split section" style="background-color: black;">
+      <!-- Container Starts -->
       <div class="container">
         <div class="row">
-          <div class="col-12">
-            <p class="section-subcontent mb-30" style="text-align: left;">Utilice este formulario para enviar sus consultas generales. Le responderemos lo antes posible.
-              <br> Gracias por permitirnos ayudarle a lograr sus metas empresariales. </p>
+          <div class="col-lg-12">
+            <h2 class="title-white wow fadeInUpQuick" data-wow-delay="0.2s">NEGOCIOS, BANCA Y FINANZAS</h2>
+            <p class="lead light-font wow fadeInUpQuick" data-wow-delay="0.4s">Nuestras soluciones, están orientadas a
+              satisfacer
+              las necesidades
+              para todo tipo de inversionistas, desde planes de negocio de inversión hasta constitución de Entidades
+              Bancarias y de
+              Medios de Pago.
+              De igual manera, le ayudamos a determinar la salud financiera de su organización; así como el valor de sus
+              activos
+              financieros y la
+              rentabilidad ajustada al riesgo.
+            </p>
           </div>
-          <div class="col-md-8">
-            <form method="post" role="form" class="shake" id="contactForm" name="contact-form" data-toggle="validator">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="Nombres" class="sr-only">Name</label>
-                    <input type="text" maxlength="100" placeholder="Your Name" id="name" class="form-control contact-control" name="name"
-                      required data-error="Introduzca el nombre">
-                    <div class="help-block with-errors"></div>
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <div class="content-inner">
+    
+              <div class="details-list">
+                <div class="row">
+                  <div class="col-sm-6 col-xs-12 wow fadeInUpQuick" data-wow-delay="0.6s">
+                    <a href="./resources.html">
+                      <h3 class="glow">Valuación de Activos Financieros</h3>
+                    </a>
+                    <p class="light-font">Los Bancos deben adecuar sus procesos de valuación de activos a fin de
+                      complementar la
+                      suficiencia de capital y provisiones regulatorias con el riesgo de crédito de contraparte, mediante
+                      métricas y empleo de calificadoras de
+                      crédito externas. En Orbis tenemos la experiencia y los conocimientos necesarios para adelantar sus
+                      procesos a las
+                      regulaciones y prever pérdidas no previstas en la normativa prudencial actual.</p>
                   </div>
-                  <div class="form-group">
-                    <label for="E-mail" class="sr-only">Email</label>
-                    <input type="email" placeholder="Your Email" id="email" class="form-control contact-control"
-                      name="email" required data-error="Introduzca el e-mail">
-                    <div class="help-block with-errors"></div>
+    
+                  <div class="col-sm-6 col-xs-12 wow fadeInUpQuick" data-wow-delay="0.6s">
+                    <a href="./resources.html">
+                      <h3 class="glow">Creación y Evaluación de Planes de Negocios</h3>
+                    </a>
+                    <p class="light-font">Determine el requerimiento de capital que necesita su empresa para ponerla en
+                      marcha o
+                      desarrolle
+                      nuevas líneas de negocio (nivel de inversión requerido), flujo de efectivo y estados financieros y el
+                      nivel de
+                      rentabilidad que promete el negocio, a través de la elaboración de planes de negocio ajustado a sus
+                      necesidades; y
+                      detallar cómo
+                      se organizarán los procesos de producción, ventas, logística, personal y finanzas, para que se logre
+                      satisfacer las necesidades de los potenciales clientes.</p>
                   </div>
-                  <div class="form-group">
-                    <label for="Subject" class="sr-only">Subject</label>
-                    <select id="subject" class="form-control contact-control" name="#subject" aria-describedby="subject-help-block" required>
-                      <option value="">Asunto - seleccione -</option>
-                      <option value="Productos y Servicios">Productos y Servicios</option>
-                      <option value="Capacitación">Capacitación</option>
-                      <option value="Capacitación">Eventos y Webinars</option>
-                      <option value="Capacitación">Partners</option>
-                      <option value="Soporte">Otros</option>
-                    </select>
-                    <div class="help-block with-errors"></div>
+    
+                  <div class="col-sm-6 col-xs-12 wow fadeInUpQuick" data-wow-delay="0.8s" style="margin-top:0px;">
+                    <a href="./resources.html">
+                      <h3 class="glow">CAMELS</h3>
+                    </a>
+                    <p class="light-font">En Orbis contamos con una metodología de análisis fundamentada en la determinación
+                      de índices
+                      usando CAMELS y otros estándares. Este enfoque basado en riesgos, requiere que se evalúe donde se
+                      encuentran las áreas de riesgo primarios
+                      de la Institución y concentrar los recursos en su determinación.</p>
                   </div>
-                  <div class="form-group">
-                    <label for="Título" class="sr-only">Subject</label>
-                    <input type="text" maxlength="200" placeholder="Título" id="title" class="form-control contact-control" name="title"
-                      required data-error="Introduzca el título">
-                    <div class="help-block with-errors"></div>
+    
+                  <div class="col-sm-6 col-xs-12 wow fadeInUpQuick" data-wow-delay="0.8s">
+                    <a href="./resources.html">
+                      <h3 class="glow">RAROC</h3>
+                    </a>
+                    <p class="light-font">La Rentabilidad Ajustada al Riesgo o RAROC (Risk Adjusted Return On Capital) es el
+                      método de medición y gestión
+                      financiera de Orbis, que logra adecuar el nivel de riesgo en que incurren las organizaciones, de
+                      acuerdo a sus
+                      exposiciones y ganancias estimadas o esperadas.</p>
                   </div>
-                  <div class="form-group">
-                    <label for="Subscribirse" class="sr-only">Subscribe</label>
-                    <input type="checkbox" id="subscribe" class="form-check-input contact-control" value="False" name="subscribe"
-                      data-error="Marque si desea subscribirse" style="height: auto">
-                    <label class="form-check-label" for="subscribe" style="display: inline;"> &nbsp Si, acepto recibir comunicados y contenido personalizado de ORBIS acerca de este tema.</label>
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="Mensaje" class="sr-only">Message</label>
-                    <textarea placeholder="Your Message" rows="16" maxlength="5000" id="message" class="form-control" name="message" required
-                      data-error="Introduzca el mensaje"></textarea>
-                    <div class="help-block with-errors"></div>
+    
+                  <div class="col-sm-12" style="margin-left: 0px;">
+                    <p class="light-font">Descarga nuestro brochure de Negocios, Banca y Finanzas para obtener mayor
+                      información al respecto...</p>
+                    <a href="./resources.html" class="btn btn-lg btn-dark-bg" style="margin-top: -30px;">Descargar</a>
                   </div>
                 </div>
               </div>
-              <div class="form-group col-xs-12" style="padding-left: 0px; padding-right: 0px;">
-                .    
-                <button class="btn btn-common btn-lg btn-block" name="submit" id="form-submit" type="submit"><i
-                        class="fa fa-envelope"></i> Submit</button>
-              </div>
-              <div id="msgSubmit" class="modal"></div>
+            </div>
           </div>
-          <div class="col-md-4 clearfix ">
-            <div class="contact-info2">
-              <h2 class="small-title">Información de contacto</h2>
-              <a href="index.html"><img src="./assets/img/logo-original-big.svg" alt=""></a>
-              <ul class="contact-info2">
-                <li>
-                  <p><strong><i class="fa fa-map-marker"></i> Dirección:</strong> C/C Guaicaipuro 1-01, El Marqués. Caracas. Venezuela.</p>
-                </li>
-                <li>
-                  <p><strong><i class="fa fa-envelope"></i> E-Mail:</strong> <a href="mailto:contact@orbisnetwork.com.ve"> contact@orbisnetwork.com.ve</a></p>
-                </li>
-                <li>
-                  <p><strong><i class="fa fa-phone"></i> Teléfonos:</strong> <a href="tel:+582123077232">(+58) 212 307-7232</a></p>
-                </li>
-                <li>
-                  <p><strong><i class="fa fa-comment" ></i>WhatsApp:</strong> <a href="https://wa.me/584125535880" target="_blank">WhatsApp Chat</a></p>
-                </li>
-                <li>
-                  
-                  <div class="social-footer">
-                    <a href="https://www.linkedin.com/in/orbisnetwork/"><i class="fa fa-linkedin icon-round"></i></a>
-                    <a href="https://twitter.com/Orbis_net"><i class="fa fa-twitter icon-round"></i></a>
-                    <a href="#"><i class="fa fa-facebook icon-round"></i></a>
-                    <a href="https://www.instagram.com/orbisnetwork/"><i class="fa fa-instagram icon-round"></i></a>
-                  </div>
-                </li>
-              </ul>
+    
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="images hide-on-small-devices">
+              <img src="./assets/img/others/implications.jpg" style="margin-top: 40px; vertical-align: middle;" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Container Ends -->
+    </section>
+    <!-- Banking and Finance Section Ends -->
+
+    <br><br><br><br>
+    <!-- Contact Banner Section -->
+    <div id="section-3" class="blank"></div>
+
+    <section id="section-contact" class="section banner-contact jumbotron-fluid d-flex"
+      style="padding-bottom: 200px; background-image: url('./assets/img/banner/bn27.jpg');">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-lg-12" style="justify-content: center; text-align: center;">
+            <h1 class="carousel-title wow fadeInUpQuick" data-wow-delay=".5s">Comuníquese ahora mismo con nuestros
+              expertos en Gestión de Riesgos Financieros...</h1>
+            <p class="lead text-centered-white wow fadeInUpQuick" data-wow-delay=".7s">Identifique cual es el nivel
+            de madurez de su gestión de riesgos financieros e implemente medidas de tratamiento y monitoreo efectivas.<br><br>
+            <strong>Juntos podemos ayudarle a aportar una mayor inteligencia financiera.<br></strong> 
+              </p>
+            <div class="center">
+              <a href="./contact.html" class="btn btn-lg btn-dark-bg wow fadeInUpQuick" data-wow-delay=".9s">Contáctenos</a>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- Contact Banner Section Ends -->
+
+
+<div id="section-4" class="blank"></div>
+
+<div id="resoruces" style="text-align: center; margin-top: 60px;">
+      <div class="container">
+          <div class="row text-center">
+              <div class="error-page">
+                <h2><a rel="nofollow">Explora nuestro centro de recursos<br> y descubre información de interés que te acompañará en tu jornada hacia el cambio<br><br></a></h2>
+                <a rel="nofollow" href="./resources.html" class="btn btn-common btn-lg">Ver Todos...</a>
+            </div>
+          </div>
+      </div>         
+    </div>
+
+    
+
+    <!-- Resources Section -->
+    <section id="testimonial" class="section">
+      <!-- Container Starts -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div id="testimonial-item" class="owl-carousel">
+              <div class="item">
+                <div class="testimonial-inner">
+                  <div class="testimonial-images">
+                    <img class="img-circle" src="./assets/img/footer/img9.jpg" alt="">
+                  </div>
+                  <div class="testimonial-content">
+                    <p>
+                      <STRONG>Diseñando Arquitecturas Ciber-Resilentes con SABSA©:</STRONG><br>El webinar a continuación introduce en el marco  
+                      y los conceptos empleados en el metodo de desarrollo de arquitectura SABSA.
+                    </p>
+                  </div>
+                  <div class="orange-line"></div>
+                  <div class="testimonial-footer">
+                    <i class="fa fa-youtube-play"></i>
+                    <a href="#">Ver webinar</a><br>
+                    (Video 35 Min.)
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-inner">
+                  <div class="testimonial-images">
+                    <img class="img-circle" src="./assets/img/footer/img11.jpg" alt="">
+                  </div>
+                  <div class="testimonial-content">
+                    <p>
+                    <STRONG>Plantilla de BIA:</STRONG><br>La plantilla ayuda a documentar un Business Impact Analisis (BIA). El documento 
+                    contiene un esquema típico y recomendaciones basadas en las mejores prácticas.
+                    </p>
+                  </div>
+                  <div class="orange-line"></div>
+                  <div class="testimonial-footer">
+                    <i class="fa fa-file-word-o"></i>
+                    <a href="#">Descargar la Plantilla</a><br>
+                    (Word 234Kb)
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-inner">
+                  <div class="testimonial-images">
+                    <img class="img-circle" src="./assets/img/footer/img12.jpg" alt="">
+                  </div>
+                  <div class="testimonial-content">
+                    <p>
+                    <STRONG>Caso de Exito:</STRONG><br>El Banco ABN AMRO Bank N.V. incursiona exitosamente en una serie de transacciones con clientes
+                    foráneos, donde estaba presente un alto Riesgo de Mercado y Crédito.
+                    </p>
+                  </div>
+                  <div class="orange-line"></div>
+                  <div class="testimonial-footer">
+                    <i class="fa fa-file-pdf-o"></i>
+                    <a href="#">Descargar Caso de Exito</a><br>
+                    (PDF 183Kb)
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-inner">
+                  <div class="testimonial-images">
+                    <img class="img-circle" src="./assets/img/footer/img1.jpg" alt="">
+                  </div>
+                  <div class="testimonial-content">
+                    <p>
+                      <STRONG>El ROI de la consultoría:</STRONG><br>El propósito de la publicación esta orientado a proveer una guía de
+                      evaluación del potential impacto financiero de los servicios de consultoría en su organización.
+                    </p>
+                    </div>
+                    <div class="orange-line"></div>
+                    <div class="testimonial-footer">
+                      <i class="fa fa-arrow-circle-o-right"></i>
+                      <a href="#">Ir a la publicación</a><br>
+                      (Lectura 5 Min.)
+                    </div>
+                    </div>
+                    </div>
+              <div class="item">
+                <div class="testimonial-inner">
+                  <div class="testimonial-images">
+                    <img class="img-circle" src="./assets/img/footer/img10.jpg" alt="">
+                  </div>
+                  <div class="testimonial-content">
+                    <p>
+                      <STRONG>Asegurando la Transformación Digital:</STRONG><br>Conozca como la arquitectura empresarial puede habilitar una transformación
+                      exitosa al abordar los componentes estratégicos, tácticos y operativos necesarios para el cambio.
+                    </p>
+                  </div>
+                  <div class="orange-line"></div>
+                  <div class="testimonial-footer">
+                    <i class="fa fa-file-powerpoint-o"></i>
+                    <a href="#">Descargar la Presentación</a><br>
+                    (Powerpoint 359Kb.)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- Container Ends -->
+    </section>
+    <!-- Resources Section End -->                
+
+
+
+
+
+
+
 
 
 
@@ -555,7 +887,7 @@
             <div class="col-md-6  col-sm-6">
               <ul class="nav nav-inline pull-xs-right">
                 <li class="nav-item">
-                  <a class="nav-link active" href="./index.html">Inicio</a>  |
+                  <a class="nav-link active" href="#home">Inicio</a>  |
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./sitemap.html">Mapa</a>  |
@@ -617,11 +949,9 @@
     <!-- Appear -->
     <script src="./assets/js/jquery.appear.js"></script>
     <script src="./assets/js/jquery.vide.js"></script>
-    <!-- Appear -->
-      <script src="./assets/js/form-validator.min.js"></script>
-      <script src="./assets/js/contact-form-script.min.js"></script>
-      <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- All JS plugin Triggers -->
     <script src="./assets/js/main.js"></script>
+    
+    
   </body>
 </html>
