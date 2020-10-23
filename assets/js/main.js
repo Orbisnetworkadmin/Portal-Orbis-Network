@@ -232,3 +232,4 @@ $("#myTab").click(function () {
   $(".animated-tab").addClass("wow fadeInUpQuick animated");
   $(".animated-tab").attr("style", "visibility: visible; animation-name: fadeInUpQuick;");
 });
+
