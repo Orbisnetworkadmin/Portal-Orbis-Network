@@ -3681,6 +3681,13 @@ color: #FF5000;
   padding: 0 0;
 }
 
+
+#benefits i {
+  color:#FF5000; 
+  padding-left: 40px; 
+  padding-right: 15px;
+}
+
 /* Bootstrap 4.5 dropleft Class */
 .dropleft,.dropright,.dropup{position:relative}
 .dropleft .dropdown-menu{top:0;right:100%;left:auto;margin-top:0;margin-right:.125rem}
