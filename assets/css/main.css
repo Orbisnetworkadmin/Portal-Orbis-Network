@@ -3726,6 +3726,25 @@ color: #FF5000;
 
 #cool-facts:before{position:absolute;content:'';left:0;top:0;width:100%;height:100%;display:block;background-color:rgba(0,0,0,.8)}
 
+.dark-banner {
+  width:100%;
+  height:100%;
+  position:relative;
+  background-image:url(../img/others/big-bg2.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 100%;
+  width: 100%;
+}
+
+.dark-banner:before{position:absolute;content:'';left:0;top:0;width:100%;height:100%;display:block;background-color:rgba(0,0,0,.8)}
+
+
+
+
+
+
 /* Bootstrap 4.5 dropleft Class */
 .dropleft,.dropright,.dropup{position:relative}
 .dropleft .dropdown-menu{top:0;right:100%;left:auto;margin-top:0;margin-right:.125rem}
