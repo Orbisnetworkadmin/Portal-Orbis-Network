@@ -231,6 +231,7 @@ $('.skill-shortcode').appear(function() {
 $("#myTab").click(function () {
   $(".animated-tab").addClass("wow fadeInUpQuick animated");
   $(".animated-tab").attr("style", "visibility: visible; animation-name: fadeInUpQuick;");
+<<<<<<< HEAD
 });
 
 
@@ -280,3 +281,6 @@ $("#myTab").click(function () {
 
 =======
 >>>>>>> 9f9ec20f4c8f3a9eb0d6c1ea4be293bf365abe7c
+=======
+});
+>>>>>>> 7c31c9ad3204721f739ba61f62e2e71301410462
