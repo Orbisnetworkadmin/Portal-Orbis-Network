@@ -235,6 +235,12 @@ $("#myTab").click(function () {
 
 
 // Lozad Lazy Loads
+<<<<<<< HEAD
+=======
+const observer = lozad('.lozad');
+observer.observe();
+
+>>>>>>> 9f9ec20f4c8f3a9eb0d6c1ea4be293bf365abe7c
  toastr.options = {
         "progressBar": true,
         "timeOut": "1500"
@@ -273,4 +279,7 @@ $("#myTab").click(function () {
     observer.observe()
     pictureObserver.observe()
     backgroundObserver.observe()
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9f9ec20f4c8f3a9eb0d6c1ea4be293bf365abe7c
