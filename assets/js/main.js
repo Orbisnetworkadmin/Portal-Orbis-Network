@@ -235,16 +235,42 @@ $("#myTab").click(function () {
 
 
 // Lozad Lazy Loads
-const observer = lozad('.lozad');
-observer.observe();
+ toastr.options = {
+        "progressBar": true,
+        "timeOut": "1500"
+    }
+    // Initialize library to lazy load images
+    var observer = lozad('.lozad', {
+        threshold: 0.1,
+        enableAutoReload: true,
+        load: function(el) {
+            el.src = el.getAttribute("data-src");
+            el.onload = function() {
+                toastr["success"](el.localName.toUpperCase() + " " + el.getAttribute("data-index") + " lazy loaded.")
+            }
+        }
+    })
 
+    // Picture observer
+    // with default `load` method
+    var pictureObserver = lozad('.lozad-picture', {
+        threshold: 0.1
+    })
 
+    window.onload = function () {
+        setTimeout(function () {
+            document.querySelector('#mutativeImg1').dataset.src = 'images/thumbs/02.jpg'
+            document.querySelector('#mutativeImg2').dataset.src = 'images/thumbs/02.jpg'
+            toastr["success"]("Once data-src change, the element render again.")
+        }, 3000)
+    }
+    // Background observer
+    // with default `load` method
+    var backgroundObserver = lozad('.lozad-background', {
+        threshold: 0.1
+    })
 
-// lozad('.lozad', {
-//     load: function(el) {
-//         el.src = el.dataset.src;
-//         el.onload = function() {
-//             el.classList.add('fade')
-//         }
-//     }
-// }).observe()
+    observer.observe()
+    pictureObserver.observe()
+    backgroundObserver.observe()
+
