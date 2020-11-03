@@ -235,7 +235,7 @@ $("#myTab").click(function () {
 
 
 // Lozad Lazy Loads
-const observer = lozad();
+const observer = lozad('.lozad');
 observer.observe();
 
 
