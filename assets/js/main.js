@@ -233,3 +233,18 @@ $("#myTab").click(function () {
   $(".animated-tab").attr("style", "visibility: visible; animation-name: fadeInUpQuick;");
 });
 
+
+// Lozad Lazy Loads
+const observer = lozad();
+observer.observe();
+
+
+
+// lozad('.lozad', {
+//     load: function(el) {
+//         el.src = el.dataset.src;
+//         el.onload = function() {
+//             el.classList.add('fade')
+//         }
+//     }
+// }).observe()
