@@ -3741,7 +3741,7 @@ color: #FF5000;
 .dark-banner:before{position:absolute;content:'';left:0;top:0;width:100%;height:100%;display:block;background-color:rgba(0,0,0,.8)}
 
 .skill-shortcode {
-  margin-left: 50px;
+  
   margin-top: 10px;
 }
 
