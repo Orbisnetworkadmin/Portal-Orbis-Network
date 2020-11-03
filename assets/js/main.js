@@ -235,8 +235,8 @@ $("#myTab").click(function () {
 
 
 // Lozad Lazy Loads
-const observer = lozad('.lozad');
-observer.observe();
+// const observer = lozad('.lozad');
+// observer.observe();
 
  toastr.options = {
         "progressBar": true,
