@@ -97,6 +97,21 @@ $('#testimonial-item').owlCarousel({
     itemsMobile : [479,1],
 });
 
+$('#testimonial-item-2').owlCarousel({
+    autoPlay: 4000,
+    items:3,
+    itemsTablet:3,
+    margin:90,
+    stagePadding:90,
+    smartSpeed:450,
+    itemsDesktop : [1199,4],
+    itemsDesktopSmall : [980,3],
+    itemsTablet: [768,3],
+    itemsTablet: [767,2],
+    itemsTabletSmall: [480,2],
+    itemsMobile : [479,1],
+});
+
 //Dark Testimonial Carousel
 $('#testimonial-dark').owlCarousel({
     autoPlay: 5000,

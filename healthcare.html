@@ -27,6 +27,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/extras/animate.css">
     <link rel="stylesheet" type="text/css" href="./assets/extras/normalize.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/action-button.css">
+
     <!-- Color CSS Styles  -->
     <link rel="stylesheet" type="text/css" href="./assets/css/colors/orange.css" media="screen" />       
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -37,7 +38,7 @@
     </script>
     <![endif]-->
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navScrollspy" style="position: relative;">
 
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
@@ -133,7 +134,7 @@
                           <h5 class="sub-menu-col-title">
                             Servicios </h5>
                           <a class="dropdown-item" href="./advisory.html">Consultoría</a>
-                          <a class="dropdown-item active" href="#">Auditoría</a>
+                          <a class="dropdown-item" href="./audit.html">Auditoría</a>
                           <a class="dropdown-item" href="./outsourcing.html">Tercerización</a>
                           <a class="dropdown-item" href="./learning-development.html">Capacitación y Desarrollo</a>
                           <a class="dropdown-item" href="./projects.html">Gestión de Proyectos</a>
@@ -145,7 +146,7 @@
                           <a class="dropdown-item" href="./banking.html">Banca y Finanzas</a>
                           <a class="dropdown-item" href="./insurance.html">Seguros</a>
                           <a class="dropdown-item" href="./epayment.html">Procesadoras de Pago</a>
-                          <a class="dropdown-item" href="./healthcare.html">Farmaceutico y Salud</a>
+                          <a class="dropdown-item active">Farmaceutico y Salud</a>
                           <a class="dropdown-item" href="./manufacturing.html">Manufactura y Alimentos</a>
                           <a class="dropdown-item" href="./govern.html">Gobierno</a>
                         </div>
@@ -301,283 +302,454 @@
     <!-- Header-wrap Section End -->
 
 
-    <!-- Main Content -->
+    <section id="section-showcase" style="margin-top: 70px;">
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+          <li data-target="#carousel" data-slide-to="3"></li>
+          <li data-target="#carousel" data-slide-to="4"></li>
 
-    <section id="section-jumbotron"
-      class="banner-section d-flex justify-content-left align-items-left" style="margin-top: 70px; background-image: url('./assets/img/banner/strd3.jpg');">
-      <div class="container text-left" style="color: white;">
-        <h1 class="carousel-title wow fadeInUpQuick animated" data-wow-delay=".5s" >Auditoría y Aseguramiento</h1>
-        <p class="lead wow fadeInUpQuick animated" data-wow-delay=".7s">La capacidad de auditoría interna para proteger los activos, la reputación 
-        y la sostenibilidad se vuelve cada vez más
-        crítica y desafiante en medio de un entorno empresarial en constantes cambios. Considerando el panorama de riesgos y las necesidades
-        de las stakeholders, los apoyamos con los conocimientos para mejorar y transformar sus funciones a fin de brindar la garantía y el valor 
-        que su organización necesita.
-      </p>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img src="./assets/img/banner/bn21a.jpg" alt="Gestión de Riesgos de Liquidez"
+              class="img-carousel d-block img-fluid">
+            <div class="carousel-caption" style="text-align: right;">
+              <h2 class="carousel-title wow fadeInUpQuick animated" data-wow-delay=".5s">Gestión de Riesgos de Liquidez
+              </h2>
+              <p class="lead wow fadeInUpQuick animated" data-wow-delay=".7s">Implemente los mecanismos eficientes que permitirán 
+              a su organización tener un flujo de efectivo oportuno así como; la capacidad necesaria y adecuada para afrontar compromisos/pagos
+              previamente acordados, sin incumplir e incurrir en incumplimientos frente a terceros.</p>
+              <a href="#section-0" class="btn btn-lg btn-dark-bg wow fadeInUpQuick animated" data-wow-delay=".9s">Leer más...</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="./assets/img/banner/bn17.jpg"
+              alt="Valoración de Activos Financieros"
+              class="img-carousel d-block img-fluid">
+            <div class="carousel-caption" style="text-align: left;">
+              <h2 class="carousel-title wow fadeInUpQuick animated" data-wow-delay=".5s">Valoración de Activos Financieros.</h2>
+              <p class="lead wow fadeInUpQuick animated" data-wow-delay=".7s">Las deficiencias demostradas por exceso de confianza en la medición VaR 
+              como la principal herramienta cuantitativa validada por la SEC y BASILEA durante los noventa y sus efectos devastadores en las crisis 
+              bancarias, evidencian la necesidad de mantener revisiones y diagnósticos proactivos acerca de los principales activos de un Banco.
+              <br><br>
+              La simple determinación de la máxima pérdida esperada de un portafolio de activos y la toma de decisiones basadas en este
+              elemento, demostró ser eficaz para ocultar y acumular fuerzas que terminaron por destruir buena parte del sistema financiero
+              mundial.
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="./assets/img/banner/bn24.jpg" alt="CAMELS"
+              class="img-carousel d-block img-fluid">
+            <div class="carousel-caption" style="text-align: left;">
+              <h2 class="carousel-title wow fadeInUpQuick animated" data-wow-delay=".5s">CAMELS</h2>
+              <p class="lead wow fadeInUpQuick animated" data-wow-delay=".7s">
+              Los Bancos están categorizados por estratos y el análisis de<br> su estructura permite profundizar en los principales indicadores 
+              financieros;<br> así como, determinar su perfil de riesgo y los puntos a mejorar para ascender<br> dentro de los niveles determinados, con un 
+              uso menor de recursos y maximizando<br> sus ingresos.
+              <br><br>
+              Las calificaciones individuales de los seis (6) componentes del CAMELS<br> se resumen en una clasificación compuesta de la
+              Institución analizada.<br> Dicha calificación refleja el juicio de cada componente y su efecto sobre los demás.</p>
+            </div>
+          </div>
+          
+        </div>
+        <a href="#carousel" class="carousel-control-prev" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a href="#carousel" class="carousel-control-next" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </section>
 
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb" style="background-color: white;  border-radius: 0px;">
-        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-        <li class="breadcrumb-item"><a href="./index.html#featured">Servicios</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Auditoría y Aseguramiento</li>
-      </ol>
-    </nav>
-<!-- Service Block-1 Section -->
-<section id="service-block-main" class="section">
-  <!-- Container Starts -->
-  <div class="container">
-    <div class="row">
-      <h1 class="section-title wow fadeIn animated" data-wow-delay=".2s">
-        RESUMEN
-      </h1>
-      <p class="section-subcontent">En estos tiempos sin precedentes, la confianza organizacional y la transparencia son más importantes que nunca. La
-      pandemia de COVID-19 ha resultado en cambios significativos en las actividades de aseguramiento que son fundamentales
-      para mantener la confianza con las partes interesadas. Áreas como la presentación de informes efectivos, las
-      comunicaciones y los requerimientos reglamentarios siguen siendo dinámicas y desafiantes.
-      <br><br>
-      Por otra parte, el cumplimiento normativo no se trata solo de mantenerse a la defensiva, este también ofrece las oportunidads de fortalecer
-      constantemente su organización a través de medidas estratégicas y proactivas que pueden aportar valor,
-      incluso cuando ayudan o se enfocan a garantizar el cumplimiento.
-      Nuestros servicios de auditoría estan diseñados para ayudarlo a navegar estos cambios y los que surgirán a futuro. Hemos
-      invertido en una transformación digital y de la fuerza laboral significativa para prepararnos para el futuro e impulsar
-      la mejora continua no solo en nuestras capacidades, sino también en la continuidad y eficacia de nuestros servicios.
-      Mientras su organización se esfuerza por generar confianza y transparencia y mantener la resiliencia, nosotros estamos siempre listos
-      para ayudarle.
-      <br><br>
-      </p>
-      
-      <h1 class="section-title wow fadeIn animated" data-wow-delay=".2s">
-        Qué podemos aportarle que nos diferencie del resto?
-      </h1>
-      <br><br>
-      <div class="col-sm-6 col-md-3">
-        <!-- Service-Block-1 Item Starts -->
-        <div class="service-item wow fadeInUpQuick animated" data-wow-delay=".8s">
-          <div class="icon-wrapper">
-            <i class="icon-info pulse-shrink">
-            </i>
-          </div>
-          <h2>
-            Riesgo
-          </h2>
-          <p>
-            Conéctese y acceda a los conocimientos más recientes sobre
-            mejores prácticas sobre el procesamiento de información basado de riesgos, adaptando sus planes de auditoría y capacitando a su
-            equipo para ejecutar compromisos utilizando mayores conocimientos de riesgo en tiempo real.
-          </p>
-        </div>
-        <!-- Service-Block-1 Item Ends -->
-      </div>
 
-      <div class="col-sm-6 col-md-3">
-        <!-- Service-Block-1 Item Starts -->
-        <div class="service-item wow fadeInUpQuick animated" data-wow-delay=".8s">
-          <div class="icon-wrapper">
-            <i class="icon-feed pulse-shrink">
-            </i>
-          </div>
-          <h2>
-            Digitalización
-          </h2>
-          <p>
-            La digitalización y la toma de decisiones basada en datos en las organizaciones exigen que las funciones
-            de auditoría desarrollen y aumenten sus capacidades de análisis y de datos. Cotamos con un grupo de expertos con el conocimiento 
-            y la experiecia necesaria para ayudarle en sus funciones.
-          </p>
-        </div>
-        <!-- Service-Block-1 Item Ends -->
-      </div>
-
-      <div class="col-sm-6 col-md-3">
-        <!-- Service-Block-1 Item Starts -->
-        <div class="service-item wow fadeInUpQuick animated" data-wow-delay="1.1s">
-          <div class="icon-wrapper">
-            <i class="icon-users pulse-shrink">
-            </i>
-          </div>
-          <h2>
-            Colaboratividad
-          </h2>
-          <p>
-            El número de grupos de control y de riesgo en las organizaciones sigue creciendo, generando preocupaciones con respecto a la
-            eficiencia de las actividades de aseguramiento y la capacidad de la auditoría para proporcionar una visión consolidada
-            de los riesgos a las partes interesadas.
-          </p>
-        </div>
-        <!-- Service-Block-1 Item Ends -->
-      </div>
-
-      <div class="col-sm-6 col-md-3">
-        <!-- Service-Block-1 Item Starts -->
-        <div class="service-item  wow fadeInUpQuick animated" data-wow-delay="1.4s">
-          <div class="icon-wrapper">
-            <i class="icon-flag pulse-shrink">
-            </i>
-          </div>
-          <h2>
-            Comunicaciones
-          </h2>
-          <p>
-            En un entorno de riesgo que cambia rápidamente, los principales ejecutivos de auditoría deben encontrar
-            nuevas formas de comunicar sus observaciones sobre el riesgo y el control, desarrollar planes de auditoría más
-            sensibles al riesgo y aumentar su influencia sobre otros ejecutivos del neggocio.
-          </p>
-        </div>
-      </div><!-- Service-Block-1 Item Ends -->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcumb-content">
+          <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="./index.html#other-services">Industrias</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Banca y Finanzas</li>
+        </ol>
+      </nav>
     </div>
-  </div><!-- Container Ends -->
-</section><!-- Service Main Section Ends -->
 
-<br><br><br><br>
+  <div id="section-0" class="blank"></div>
 
-<!-- Facts Section -->
-<section id="cool-facts" class="section">
-  <!-- Container Starts -->
-  <div class="container">
-    <div class="row">
+    <!-- Service Block-1 Section -->
+    <section id="overview" class="section">
+      <!-- Container Starts -->
+      <div class="container">
+        <div class="row">        
+          <h1 class="section-title wow fadeIn animated" data-wow-delay=".2s">
+            FARMACÉUTICO Y SALUD
+          </h1>
+          <br>
+          <p class="section-subcontent" style="text-align: justify">El entorno en el que operan las empresas farmacéuticas y de salud es cada vez más desafiante. Impulsados por una agenda
+          sanitaria cada vez más exigente, la necesidad de medicamentos y servicios de salud innovadores y rentables sigue
+          en aumento; los reguladores, los proveedores y los pacientes exigen mayor
+          eficacia, transparencia y acceso a la información.</p>
+          <p>Para satisfacer estas demandas, nuestras soluciones buscan mejorar la productividad, aumentar la eficiencia de sus
+            operaciones, racionalizar los gastos y mejorar el rendimiento financiero y tecnológico. Aunque los desafíos pueden
+            variar de una
+            región a otra, los sistemas de salud tienen el mismo objetivo: brindar la mejor calidad de
+            atención, al mayor número de personas, al menor costo posible.
+          </p>
+        </div>
+      </div><!-- Container Ends -->
+    </section><!-- Service Main Section Ends -->
 
-      <div class="col-sm-6 col-md-3 col-lg-3">
-        <div class="fact-block clearfix wow fadeInUpQuick" data-wow-delay="0.3s">
-          <div class="facts-item">
-            <i class="icon-like"></i>
-            <div class="fact-count">
-              <h3><span class="counter">99.7</span>%</h3>
-              <h4>Satisfacción</h4>
-              <p clas="light-font" style="text-align: justify">De los Clientes atendidos, dicen estar satisfechos luego de recibir algún 
-                producto o servicio de parte nuestra.</p>
+
+
+    <!-- Resources Section 1 -->
+    <section id="testimonial" class="section">
+      <!-- Container Starts -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div id="testimonial-item" class="owl-carousel">
+              <div class="item">
+                <div class="testimonial-inner">
+                  <div class="testimonial-images-2">
+                    <img src="./assets/img/products/team-07.jpg" alt="">
+                  </div>
+                  <div class="testimonial-content">
+                    <p>
+                      <STRONG>Diseñando Arquitecturas Ciber-Resilentes con SABSA©:</STRONG><br>El webinar a continuación introduce en el marco  
+                      y los conceptos empleados en el metodo de desarrollo de arquitectura SABSA.
+                    </p>
+                  </div>
+                  <div class="orange-line"></div>
+                  <div class="testimonial-footer">
+                    <i class="fa fa-youtube-play"></i>
+                    <a href="#">Ver webinar</a><br>
+                    (Video 35 Min.)
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-inner">
+                  <div class="testimonial-images-2">
+                    <img src="./assets/img/products/team-06.jpg" alt="">
+                  </div>
+                  <div class="testimonial-content">
+                    <p>
+                    <STRONG>Plantilla de BIA:</STRONG><br>La plantilla ayuda a documentar un Business Impact Analisis (BIA). El documento 
+                    contiene un esquema típico y recomendaciones basadas en las mejores prácticas.
+                    </p>
+                  </div>
+                  <div class="orange-line"></div>
+                  <div class="testimonial-footer">
+                    <i class="fa fa-file-word-o"></i>
+                    <a href="#">Descargar la Plantilla</a><br>
+                    (Word 234Kb)
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-inner">
+                  <div class="testimonial-images-2">
+                    <img src="./assets/img/products/team-09.jpg" alt="">
+                  </div>
+                  <div class="testimonial-content">
+                    <p>
+                    <STRONG>Caso de Exito:</STRONG><br>El Banco ABN AMRO Bank N.V. incursiona exitosamente en una serie de transacciones con clientes
+                    foráneos, donde estaba presente un alto Riesgo de Mercado y Crédito.
+                    </p>
+                  </div>
+                  <div class="orange-line"></div>
+                  <div class="testimonial-footer">
+                    <i class="fa fa-file-pdf-o"></i>
+                    <a href="#">Descargar Caso de Exito</a><br>
+                    (PDF 183Kb)
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-inner">
+                  <div class="testimonial-images-2">
+                    <img src="./assets/img/products/team-10.jpg" alt="">
+                  </div>
+                  <div class="testimonial-content">
+                    <p>
+                      <STRONG>El ROI de la consultoría:</STRONG><br>El propósito de la publicación esta orientado a proveer una guía de
+                      evaluación del potential impacto financiero de los servicios de consultoría en su organización.
+                    </p>
+                    </div>
+                    <div class="orange-line"></div>
+                    <div class="testimonial-footer">
+                      <i class="fa fa-arrow-circle-o-right"></i>
+                      <a href="#">Ir a la publicación</a><br>
+                      (Lectura 5 Min.)
+                    </div>
+                    </div>
+                    </div>
+              <div class="item">
+                <div class="testimonial-inner">
+                  <div class="testimonial-images-2">
+                    <img src="./assets/img/products/team-05.jpg" alt="">
+                  </div>
+                  <div class="testimonial-content">
+                    <p>
+                      <STRONG>Asegurando la Transformación Digital:</STRONG><br>Conozca como la arquitectura empresarial puede habilitar una transformación
+                      exitosa al abordar los componentes estratégicos, tácticos y operativos necesarios para el cambio.
+                    </p>
+                  </div>
+                  <div class="orange-line"></div>
+                  <div class="testimonial-footer">
+                    <i class="fa fa-file-powerpoint-o"></i>
+                    <a href="#">Descargar la Presentación</a><br>
+                    (Powerpoint 359Kb.)
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </div><!-- Container Ends -->
+    </section>
+    <!-- Resources Section End -->                
 
-      <div class="col-sm-6 col-md-3 col-lg-3">
-        <div class="fact-block clearfix wow fadeInUpQuick" data-wow-delay="0.6s">
-          <div class="facts-item">
-            <i class="icon-action-redo"></i>
-            <div class="fact-count">
-              <h3><span class="counter">99.6</span>%</h3>
-              <h4>Repetiría</h4>
-              <p clas="light-font" style="text-align: justify">De los clientes atendidos, el 99.6 indica que nos volverían a 
-                contratar para nuevos proyectos; o productos y servicios.
-              </p>
+
+    
+    <!-- Resources Section 2 -->
+    <section id="testimonial-2" class="section" style="padding: 0;">
+      <!-- Container Starts -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div id="testimonial-item-2" class="owl-carousel">
+              <div class="item">
+                <div class="testimonial-inner">
+                  <div class="testimonial-images-2">
+                    <img src="./assets/img/products/team-13.jpg" alt="">
+                  </div>
+                  <div class="testimonial-content">
+                    <p>
+                      <STRONG>Diseñando Arquitecturas Ciber-Resilentes con SABSA©:</STRONG><br>El webinar a continuación
+                      introduce en el marco
+                      y los conceptos empleados en el metodo de desarrollo de arquitectura SABSA.
+                    </p>
+                  </div>
+                  <div class="orange-line"></div>
+                  <div class="testimonial-footer">
+                    <i class="fa fa-youtube-play"></i>
+                    <a href="#">Ver webinar</a><br>
+                    (Video 35 Min.)
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-inner">
+                  <div class="testimonial-images-2">
+                    <img src="./assets/img/products/team-11.jpg" alt="">
+                  </div>
+                  <div class="testimonial-content">
+                    <p>
+                      <STRONG>Plantilla de BIA:</STRONG><br>La plantilla ayuda a documentar un Business Impact Analisis
+                      (BIA). El documento
+                      contiene un esquema típico y recomendaciones basadas en las mejores prácticas.
+                    </p>
+                  </div>
+                  <div class="orange-line"></div>
+                  <div class="testimonial-footer">
+                    <i class="fa fa-file-word-o"></i>
+                    <a href="#">Descargar la Plantilla</a><br>
+                    (Word 234Kb)
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-inner">
+                  <div class="testimonial-images-2">
+                    <img src="./assets/img/products/team-02.jpg" alt="">
+                  </div>
+                  <div class="testimonial-content">
+                    <p>
+                      <STRONG>Caso de Exito:</STRONG><br>El Banco ABN AMRO Bank N.V. incursiona exitosamente en una serie de
+                      transacciones con clientes
+                      foráneos, donde estaba presente un alto Riesgo de Mercado y Crédito.
+                    </p>
+                  </div>
+                  <div class="orange-line"></div>
+                  <div class="testimonial-footer">
+                    <i class="fa fa-file-pdf-o"></i>
+                    <a href="#">Descargar Caso de Exito</a><br>
+                    (PDF 183Kb)
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-inner">
+                  <div class="testimonial-images-2">
+                    <img src="./assets/img/products/team-14.jpg" alt="">
+                  </div>
+                  <div class="testimonial-content">
+                    <p>
+                      <STRONG>El ROI de la consultoría:</STRONG><br>El propósito de la publicación esta orientado a proveer
+                      una guía de
+                      evaluación del potential impacto financiero de los servicios de consultoría en su organización.
+                    </p>
+                  </div>
+                  <div class="orange-line"></div>
+                  <div class="testimonial-footer">
+                    <i class="fa fa-arrow-circle-o-right"></i>
+                    <a href="#">Ir a la publicación</a><br>
+                    (Lectura 5 Min.)
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-inner">
+                  <div class="testimonial-images-2">
+                    <img src="./assets/img/products/team-12.jpg" alt="">
+                  </div>
+                  <div class="testimonial-content">
+                    <p>
+                      <STRONG>Asegurando la Transformación Digital:</STRONG><br>Conozca como la arquitectura empresarial
+                      puede habilitar una transformación
+                      exitosa al abordar los componentes estratégicos, tácticos y operativos necesarios para el cambio.
+                    </p>
+                  </div>
+                  <div class="orange-line"></div>
+                  <div class="testimonial-footer">
+                    <i class="fa fa-file-powerpoint-o"></i>
+                    <a href="#">Descargar la Presentación</a><br>
+                    (Powerpoint 359Kb.)
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </div><!-- Container Ends -->
+    </section>
+    <!-- Resources Section End -->
 
-      <div class="col-sm-6 col-md-3 col-lg-3">
-        <div class="fact-block clearfix wow fadeInUpQuick" data-wow-delay="0.9s">
-          <div class="facts-item">
-            <i class="icon-check"></i>
-            <div class="fact-count">
-              <h3><span class="counter">99.9</span>%</h3>
-              <h4>Recomienda</h4>
-              <p clas="light-font" style="text-align: justify">De nuestros clientes atendidos, el 99.9 indica que nos recomendaría en 
-                referencia a los productos y servicios recibidos.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-md-3 col-lg-3">
-        <div class="fact-block clearfix wow fadeInUpQuick" data-wow-delay="1.2s">
-          <div class="facts-item">
-            <i class="icon-badge"></i>
-            <div class="fact-count">
-              <h3><span class="counter">96.8</span>+</h3>
-              <h4>Valor</h4>
-              <p clas="light-font" style="text-align: justify">De los clientes atendidos, el 96.8 indica que las soluciones ofrecidas aportan 
-                un valor mayor a lo esperado.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div><!-- Container Ends -->
-</section><!-- Facts Section Ends -->
-
-<br><br><br><br>
 
 <!-- Others Services Services Section Start -->
-<section class="split section">
+<section class="split section dark-banner">
   <!-- Container Starts -->
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <h2 class="section-title wow fadeInUpQuick" data-wow-delay="0.2s">COMO PODEMOS AYUDARLE...</h2>
-
+        <h2 class="title-white wow fadeInUpQuick" data-wow-delay="0.2s">TAMBIÉN PODEMOS AYUDARLE CON...</h2>
+        <p class="lead light-font wow fadeInUpQuick" data-wow-delay="0.4s">Nuestros equipos de proyectos cuentan con el
+          talento y la capacidad para ofrecer servicios de calidad, alineados a sus
+          expectativas y a la de sus clientes. Comprometidos en todas las fases del proyecto, hasta la implantación y
+          puesta en
+          funcionamiento de las soluciones.
+          Este talento, nuestra experiencia y el conocimiento de las mejores prácticas nacionales e internacionales, nos
+          permite
+          ofrecer servicios de alto valor añadido a nuestros clientes.
+        </p>
       </div>
 
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="images hide-on-small-devices">
-          <img src="./assets/img/others/pc1.jpg" style="margin-top: 40px; vertical-align: middle;" alt="">
-        </div>
-      </div>
-
-      <div class="col-md-8 col-sm-6 col-xs-12">
+      <div class="col-lg-12">
         <div class="content-inner">
 
           <div class="details-list">
             <div class="row">
-              <div class="col-sm-6 col-xs-12 wow fadeInUpQuick" data-wow-delay="0.6s">
+              <div class="col-md-4 col-sm-6 wow fadeInUpQuick" data-wow-delay="0.6s">
                 <a href="#">
-                  <h3 class="glow">Planificación de Auditorías</h3>
+                  <h3 class="glow">Creación de Empresas Bancarias y de Medios de Pago / Solicitud de Permisos</h3>
                 </a>
-                <p class="light-font">Le ayudamos a realizar o revisar su planificación de auditoría; para que defina
-                  con
-                  claridad los procedimientos a ser empleados, así como el alcance y las oportunidades de aplicación,
-                  con la finalidad de
-                  brindar la orientación necesaria durante la ejecución del trabajo y de registro permanente del trabajo
-                  a efectuarse,
-                  adicionalmente podemos incorporar los objetivos y procedimientos que guiarán el desarrollo del
-                  mismo.
+                <p class="light-font">Nuestras soluciones, están orientadas a
+                satisfacer las necesidades
+                para todo tipo de inversionistas, desde planes de negocio de inversión hasta constitución de Entidades
+                Bancarias y de Medios de Pago.
+                De igual manera, le ayudamos a determinar la salud financiera de su organización; así como el valor de sus
+                activos financieros y la
+                rentabilidad ajustada al riesgo.
+                <br><br>
                 </p>
               </div>
 
-              <div class="col-sm-6 col-xs-12 wow fadeInUpQuick" data-wow-delay="0.6s">
+              <div class="col-md-4 col-sm-6 wow fadeInUpQuick" data-wow-delay="0.6s">
                 <a href="#">
-                  <h3 class="glow">Elaboración de Programas de Trabajo</h3>
+                  <h3 class="glow">Creación y Evaluación de Planes de Negocios / Mejoras de la Estrategia</h3>
                 </a>
-                <p class="light-font">Lo ayudaremos con las funciones
-                  de cumplimiento y auditoría interna en lo referente a la elaboración de programas de trabajo
-                  eficientes con la finalidad de
-                  brindar apoyo a las políticas de gobierno, administración de riesgos, la calidad y la efectividad de
-                  su proceso de auditorías internas,
-                  mejorando y estandarizando la capacidad de ejecución y supervisión de su departamento de auditorías
-                  internas.<br><br></p>
-              </div>
-
-              <div class="col-sm-6 col-xs-12 wow fadeInUpQuick" data-wow-delay="0.8s" style="margin-top:0px;">
-                <a href="#">
-                  <h3 class="glow">Auditoría de Mejores Prácticas y/o de Cumplimiento Normativo</h3>
-                </a>
-                <p class="light-font">El enfoque puede ser dirigido al
-                  cumplimiento y auditoría de los principales marcos de referencia o mejores prácticas internacionales,
-                  ya sea para su
-                  organización o para un tercero en su cadena de valor, aportamos el marco metodológico que garantiza la
-                  eficacia en términos de evaluación
-                  y transparencia. Contamos con expertos certificados y con experiencia dentro de los organismos reguladores.</p>
-              </div>
-
-              <div class="col-sm-6 col-xs-12 wow fadeInUpQuick" data-wow-delay="0.8s">
-                <a href="#">
-                  <h3 class="glow">Optimización de estructuras, modelos y procesos organizativos.</h3>
-                </a>
-                <p class="light-font">Te ayudamos a optimizar tu estructura organizativa de acuerdo a los requerimientos
-                  de tu cadena de valor
-                  y a los procesos de negocio que la integran, incluyendo la cadena de suministros. Alineamos la misión,
-                  funciones y destrezas
-                  corporativas de las áreas funcionales resultantes, con los objetivos operacionales de los procesos que
-                  soporta y con los
-                  objetivos estratégicos de la organización.
+                <p class="light-font">Le ayudamos a realizar o revisar su planificación estratégica; para que defina con
+                  claridad los caminos
+                  elegidos para
+                  maximizar las expectativas de sus clientes, empleados y accionistas; completándose con una adecuada
+                  implementación
+                  táctica y operativa que condicione el día a día de la actividad de la empresa (mapas estratégicos,
+                  planes tácticos y
+                  operativos (POA)).
                 </p>
+              </div>
+
+              <div class="col-md-4 col-sm-6 wow fadeInUpQuick" data-wow-delay="0.6s">
+                <a href="#">
+                  <h3 class="glow">Diagnóstico de Capacidades Empresariales</h3>
+                </a>
+                <p class="light-font">Las capacidades empresariales constituyen un sistema de condiciones internas, cuyo
+                  cumplimento es necesario para el
+                  éxito del proceso de gestión estratégica en la empresa. Capacidades que van desde el gobierno,
+                  planeamiento y
+                  seguimiento estratégico, cumplimiento normativo, gestión del riesgo y del control, hasta el desempeño
+                  operativo,
+                  estratégico, de los recursos empresariales y la tecnología.</p>
               </div>
 
             </div>
           </div>
+
+          <div class="details-list">
+          <div class="row">
+            <div class="col-md-4 col-sm-6 wow fadeInUpQuick" data-wow-delay="0.6s">
+              <a href="./it-management.html">
+                <h3 class="glow">Diagnóstico de Capacidades de TI</h3>
+              </a>
+              <p class="light-font">Nuestro servicios de diagnóstico integral de las Capacidades de TI, esta especializado y
+                especialmente enfocado en conocer las capacidades actuales de entrega de servicios de TI al negocio, modelo de
+                gobierno; y la
+                arquitectura tecnológica identificando adicionalmente, el nivel de alineación existente entre los objetivos y
+                estrategias de la TI
+                con los objetivos estratégicos del negocio. Te ayudamos a crear un mapa claro de ruta para solventar las debilidades
+                o deficiencias
+                identificadas.
+              </p>
+            </div>
+          
+            <div class="col-md-4 col-sm-6 wow fadeInUpQuick" data-wow-delay="0.8s">
+              <a href="#">
+                <h3 class="glow">Optimización de estructuras, modelos y procesos organizativos</h3>
+              </a>
+              <p class="light-font">Te ayudamos a optimizar tu estructura organizativa de acuerdo a los requerimientos
+                de tu cadena de valor
+                y a los procesos de negocio que la integran, incluyendo la cadena de suministros. Alineamos la misión,
+                funciones y destrezas
+                corporativas de las áreas funcionales resultantes, con los objetivos operacionales de los procesos que
+                soporta y con los
+                objetivos estratégicos de la organización.
+                <br><br>
+              </p>
+            </div>
+          
+            <div class="col-md-4 col-sm-6 wow fadeInUpQuick" data-wow-delay="0.8s">
+              <a href="#">
+                <h3 class="glow">Tecnología de Punta del última generación</h3>
+              </a>
+              <p class="light-font">Facilitamos la evaluación de la tecnología de punta que mejor se adapta a sus necesidades,
+                permitiendo
+                soportar y complementar nuestras metodologías y potenciando la gama de posibilidades que se traducen en mejores
+                resultados y aporte de valor a su negocio. Las soluciones tecnológicas adquiridas través de nuestros partners, su
+                proveedor de confianza o a partir de un esquema mixto son incorporadas en un marco de Gobierno, Riesgo y Cumplimiento (GRC),
+                podemos ayudarle a desarrollar o adquirir la solución automatizada que necesita para asegurar su negocio.
+              </p>
+            </div>
+          
+          </div>
+          </div>
+
         </div>
       </div>
 
@@ -589,200 +761,37 @@
 
 <br><br><br><br>
 
-<!-- Contact Banner Section -->
-<div id="section-0a1" class="blank"></div>
 
-<section id="section-contact" class="section banner-contact jumbotron-fluid d-flex"
-  style="padding-bottom: 200px; background-image: url('./assets/img/banner/strd1.jpg');">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12" style="text-align: justify; margin-top: 100px; color: white;">
-        <h1 class="carousel-title wow fadeInUpQuick" data-wow-delay=".5s">Integración de las iniciativas de aseguramiento</h1>
-        <p class="lead wow fadeInUpQuick" data-wow-delay=".7s">Integrar las funciones de aseguramiento genera la colaboración y coordinación de manera formal entre las funciones de
-        aseguramiento, aportando las capacidades necesarias para compartir información de los riesgos, asignar su cobertura y
-        sincronizar los esfuerzos de evaluación y comunicación. Adicionalmente, proporciona una visión clara del actual entorno
-        de riesgo, ofreciendo una mejor seguridad al mismo tiempo que se minimizan las redundancias y se identifican y mitigan
-        nuevos riesgos.
-        <br><br>
-        En este sentido, es imperativo que las funciones de aseguramiento aumenten su colaboración para mantener a la
-        organización al tanto de los riesgos complejos del entorno actual. El aseguramiento integrado proporciona a las
-        funciones de aseguramiento un marco valioso para orientar sus esfuerzos de coordinación con el fin de gestionar sus
-        recursos eficazmente y para brindar un mayor aseguramiento a la empresa; y la auditoría debe tomar la iniciativa para
-        convertirlo en realidad.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Contact Banner Section Ends -->
+    <br><br><br><br>
 
-<br><br><br><br>
-
-<!-- Contact Banner Section -->
-<section id="section-contact" class="banner-contact jumbotron-fluid d-flex"
-  style="background-image: url('./assets/img/banner/bn28.jpg');">
-  <div class="container">
-    <div class="row text-center">
-      <div class="col-lg-12" style="background-color: black; justify-content: center; align-items: center;">
-        <h1 class="carousel-title text-centered wow fadeInUpQuick" data-wow-delay=".5s">
-          <strong>Innove su gestión de auditoría y el aseguramiento</strong></h1>
-        <p class="lead text-centered-white wow fadeInUpQuick" data-wow-delay=".7s">Un entorno empresarial en constante movimiento y un panorama de riesgo volátil desafían la capacidad para proteger los
-        activos, la reputación y la sostenibilidad de las organizaciones. Los líderes de auditoría exitosos emplean nuevas
-        tecnologías, brindan garantía en tiempo real y trabajan con otros grupos de riesgo y control, mientras se mantienen
-        sincronizados con los stakeholders mediante estructuras de gobierno eficientes.
-        <br><br>
-        La junta directiva y los altos ejecutivos necesitan información procesable para tomar decisiones rápidas. Esto requiere
-        que el departamento de auditoría mejore su capacidad para detectar los riesgos emergentes y asignar la cobertura de
-        aseguramiento al perfil de riesgos de la organización.
-        <br>
-        </p>
-        <div class="center">
-          <a href="./contact.html" class="btn btn-lg btn-dark-bg wow fadeInUpQuick" data-wow-delay=".9s">Contáctenos</a>
-          <br><br>
-        </div>
-        <br>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Contact Banner Section Ends -->
-
-<div id="free-promo" style="
-    text-align: center;
-    margin-top: 80px;
-">
-  <div class="container">
-    <div class="row text-center">
-      <div class="error-page">
-        <h2><a rel="nofollow">Descarga nuestra presentación<br> y encuentra mayor información de nuestro programa de asociados de negocios
-            <br><br></a></h2>
-        <a rel="nofollow" href="./resources.html" class="btn btn-common btn-lg">Presentación</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Resources Section -->
-<section id="testimonial" class="section">
-  <!-- Container Starts -->
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <div id="testimonial-item" class="owl-carousel">
-          <div class="item">
-            <div class="testimonial-inner">
-              <div class="testimonial-images">
-                <img class="img-circle" src="./assets/img/footer/img9.jpg" alt="">
-              </div>
-              <div class="testimonial-content">
-                <p>
-                  <STRONG>Diseñando Arquitecturas Ciber-Resilentes con SABSA©:</STRONG><br>El webinar a continuación
-                  introduce en el marco
-                  y los conceptos empleados en el metodo de desarrollo de arquitectura SABSA.
-                </p>
-              </div>
-              <div class="orange-line"></div>
-              <div class="testimonial-footer">
-                <i class="fa fa-youtube-play"></i>
-                <a href="#">Ver webinar</a><br>
-                (Video 35 Min.)
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="testimonial-inner">
-              <div class="testimonial-images">
-                <img class="img-circle" src="./assets/img/footer/img11.jpg" alt="">
-              </div>
-              <div class="testimonial-content">
-                <p>
-                  <STRONG>Plantilla de BIA:</STRONG><br>La plantilla ayuda a documentar un Business Impact Analisis
-                  (BIA). El documento
-                  contiene un esquema típico y recomendaciones basadas en las mejores prácticas.
-                </p>
-              </div>
-              <div class="orange-line"></div>
-              <div class="testimonial-footer">
-                <i class="fa fa-file-word-o"></i>
-                <a href="#">Descargar la Plantilla</a><br>
-                (Word 234Kb)
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="testimonial-inner">
-              <div class="testimonial-images">
-                <img class="img-circle" src="./assets/img/footer/img12.jpg" alt="">
-              </div>
-              <div class="testimonial-content">
-                <p>
-                  <STRONG>Caso de Exito:</STRONG><br>El Banco ABN AMRO Bank N.V. incursiona exitosamente en una serie de
-                  transacciones con clientes
-                  foráneos, donde estaba presente un alto Riesgo de Mercado y Crédito.
-                </p>
-              </div>
-              <div class="orange-line"></div>
-              <div class="testimonial-footer">
-                <i class="fa fa-file-pdf-o"></i>
-                <a href="#">Descargar Caso de Exito</a><br>
-                (PDF 183Kb)
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="testimonial-inner">
-              <div class="testimonial-images">
-                <img class="img-circle" src="./assets/img/footer/img1.jpg" alt="">
-              </div>
-              <div class="testimonial-content">
-                <p>
-                  <STRONG>El ROI de la consultoría:</STRONG><br>El propósito de la publicación esta orientado a proveer
-                  una guía de
-                  evaluación del potential impacto financiero de los servicios de consultoría en su organización.
-                </p>
-              </div>
-              <div class="orange-line"></div>
-              <div class="testimonial-footer">
-                <i class="fa fa-arrow-circle-o-right"></i>
-                <a href="#">Ir a la publicación</a><br>
-                (Lectura 5 Min.)
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="testimonial-inner">
-              <div class="testimonial-images">
-                <img class="img-circle" src="./assets/img/footer/img10.jpg" alt="">
-              </div>
-              <div class="testimonial-content">
-                <p>
-                  <STRONG>Asegurando la Transformación Digital:</STRONG><br>Conozca como la arquitectura empresarial
-                  puede habilitar una transformación
-                  exitosa al abordar los componentes estratégicos, tácticos y operativos necesarios para el cambio.
-                </p>
-              </div>
-              <div class="orange-line"></div>
-              <div class="testimonial-footer">
-                <i class="fa fa-file-powerpoint-o"></i>
-                <a href="#">Descargar la Presentación</a><br>
-                (Powerpoint 359Kb.)
-              </div>
+    <!-- Contact Banner Section -->
+    <div id="section-3" class="blank"></div>
+    
+    <section id="section-contact" class="section banner-contact jumbotron-fluid d-flex"
+      style="padding-bottom: 200px; background-image: url('./assets/img/banner/bn27.jpg');">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-lg-12" style="justify-content: center; text-align: center;">
+            <h1 class="carousel-title wow fadeInUpQuick" data-wow-delay=".5s">Comuníquese ahora mismo con nuestros
+            expertos...</h1>
+            <p class="lead text-centered-white wow fadeInUpQuick" data-wow-delay=".7s">Los líderes empresariales enfrentan una
+              enorme presión para mantenerse a la vanguardia y crecer de manera rentable en
+              un entorno de cambios constantes. Establezca su visión y alcance sus metas con información objetiva para tomar las
+              decisiones correctas y atacar los problemas que más le importan a usted y
+              a su organización.<br><br>
+              <strong>Comience desde ya y vea cómo podemos ayudarle a impulsar su proyecto de transformación y entregar valor
+                inmediato.<br></strong>
+            </p>
+            <div class="center">
+              <a href="./contact.html" class="btn btn-lg btn-dark-bg wow fadeInUpQuick" data-wow-delay=".9s">Contáctenos</a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div><!-- Container Ends -->
-</section>
-<!-- Resources Section End -->
+    </section>
+    <!-- Contact Banner Section Ends -->
 
-
-
-
-
-
-
-
+    <br><br><br><br>
 
     <!-- Footer Section -->
     <footer>
@@ -919,7 +928,7 @@
             <div class="col-md-6  col-sm-6">
               <ul class="nav nav-inline pull-xs-right">
                 <li class="nav-item">
-                  <a class="nav-link active" href="./index.html">Inicio</a>  |
+                  <a class="nav-link active" href="#home">Inicio</a>  |
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./sitemap.html">Mapa</a>  |
@@ -983,5 +992,7 @@
     <script src="./assets/js/jquery.vide.js"></script>
     <!-- All JS plugin Triggers -->
     <script src="./assets/js/main.js"></script>
+    
+    
   </body>
 </html>
